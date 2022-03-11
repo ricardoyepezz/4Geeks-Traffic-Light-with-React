@@ -1,20 +1,27 @@
 import React from "react";
 import { useState } from "react";
-import { PropTypes } from "prop-types";
 import "../../styles/index.css";
-
-export const TrafficLight = (props) => {
-	const [color, setColor] = useState("no color");
+//defino estado inicial
+export const TrafficLight = () => {
+	const [color, setColor] = useState("");
 
 	return (
-		<div>
-			<button onClick={() => setColor(props.color)}>Click me</button>
-
-			<p className="parrafo">You clicked {color} times</p>
+		<div className="box">
+			<div
+				onClick={() => setColor("red")}
+				className={
+					"light red" + (color === "red" ? " glow" : "")
+				}></div>
+			<div
+				onClick={() => setColor("yellow")}
+				className={
+					"light yellow" + (color === "yellow" ? " glow" : "")
+				}></div>
+			<div
+				onClick={() => setColor("green")}
+				className={
+					"light green" + (color === "green" ? " glow" : "")
+				}></div>
 		</div>
 	);
-};
-
-TrafficLight.propTypes = {
-	color: PropTypes.string,
 };

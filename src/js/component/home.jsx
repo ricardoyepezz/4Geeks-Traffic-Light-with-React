@@ -5,9 +5,8 @@ import { TrafficLight } from "./TrafficLight";
 const Home = () => {
 	return (
 		<div>
-			<TrafficLight color={"rojo"} />
-			<TrafficLight color={"amarillo"} />
-			<TrafficLight color={"verde"} />
+			<div className="support"></div>
+			<TrafficLight />
 		</div>
 	);
 };
