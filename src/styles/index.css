@@ -1,3 +1,19 @@
+.purple{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block; 
+    background-color: purple;
+    box-shadow: 0 0 10px 5px white;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
 .light {
     width: 100px;
      height: 100px;
@@ -18,7 +34,7 @@
     }
 
 .box {
-    height: 340px;
+    min-height: 340px;
     width: 120px;
     background-color: black;
     padding: 10px;
@@ -36,3 +52,4 @@
         background-color: black;
         margin: auto;
 }
+
